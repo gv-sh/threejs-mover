@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<script type="importmap">
+            {
+              "imports": {
+                "three": "https://unpkg.com/three@0.149.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.149.0/examples/jsm/"
+              }
+            }
+        </script>
+		<link rel="stylesheet" href="/style.css">
+		<title>threejs-mover</title>
+	</head>
+
+	<body>
+		<div id="popup" class="modal">
+			<div class="modal-header">
+				<p id="popup-title">Popup</p>
+				<a id="popup-close" href="#">Hide</a>
+			</div>
+			<div class="modal-body">
+				<p id="popup-text">Hello World</p>
+			</div>
+		</div>
+		<script type="module" src="/main.js"></script>
+		<script>
+			// Click close button to hide popup
+			document.getElementById("popup-close").addEventListener("click", function () {
+				document.getElementById("popup").style.display = "none";
+			});
+		</script>
+	</body>
+
+</html>
