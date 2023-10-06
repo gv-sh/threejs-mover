@@ -276,7 +276,7 @@ instructions.style.position = 'absolute';
 instructions.style.top = '10px';
 instructions.style.width = '100%';
 instructions.style.textAlign = 'center';
-instructions.innerHTML = 'WASD to move, Space to interact';
+instructions.innerHTML = 'WASD to move, Click red boxes to show popup';
 document.body.appendChild(instructions);
 
 // Add cameraOffset gui
